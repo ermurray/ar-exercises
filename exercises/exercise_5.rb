@@ -15,4 +15,4 @@ pp total_revenue
 average_annual_revenue = Store.average(:annual_revenue)
 puts average_annual_revenue
 
-# puts Store.where([:annual_revenue] > 1000000)
+puts Store.where("annual_revenue > 1000000").count
